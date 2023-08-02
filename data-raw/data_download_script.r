@@ -10,11 +10,11 @@
 
 library(rnaturalearth)
 
-countries10 <- ne_download(scale=10, type='countries', category='cultural')
-map_units10 <- ne_download(scale=10, type='map_units', category='cultural')
-sovereignty10 <- ne_download(scale=10, type='sovereignty', category='cultural')
-states10 <- ne_download(scale=10, type='states', category='cultural')
-coastline10 <- ne_download(scale=10, type='coastline', category='physical')
+countries10 <- ne_download(scale=10, type='countries', category='cultural', returnclass = "sf")
+map_units10 <- ne_download(scale=10, type='map_units', category='cultural', returnclass = "sf")
+sovereignty10 <- ne_download(scale=10, type='sovereignty', category='cultural', returnclass = "sf")
+states10 <- ne_download(scale=10, type='states', category='cultural', returnclass = "sf")
+coastline10 <- ne_download(scale=10, type='coastline', category='physical', returnclass = "sf")
 
 
 #### todo
